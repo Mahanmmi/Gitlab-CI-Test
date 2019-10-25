@@ -1,0 +1,23 @@
+{
+  "name": "gitlab-ci-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --watch",
+    "ci_test": "jest -i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahanmmi/Gitlab-CI-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahanmmi/Gitlab-CI-Test/issues"
+  },
+  "homepage": "https://github.com/Mahanmmi/Gitlab-CI-Test#readme",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
