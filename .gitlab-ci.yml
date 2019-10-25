@@ -1,9 +1,16 @@
-image: node:12.7.0
+image: node:latest
 
-before_script:
-  - npm install
+services:
+  - mongo:latest
 
-test:
+variables:
+  MONGODB_URL: 'mongodb://mongo/app_name'
+
+cache:
+  paths:
+    - node_modules/
+
+test_async:
   script:
+    - npm install
     - npm run ci_test
-

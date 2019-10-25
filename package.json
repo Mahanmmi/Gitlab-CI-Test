@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest -i --watch",
+    "dev": "env-cmd -f ./config/dev.env node ./src/index.js",
+    "test": "env-cmd -f ./config/test.env jest -i --watch",
     "ci_test": "jest -i"
   },
   "repository": {
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/Mahanmmi/Gitlab-CI-Test#readme",
   "dependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1"
   }
 }
