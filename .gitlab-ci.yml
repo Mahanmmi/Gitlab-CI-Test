@@ -1,4 +1,4 @@
-image: "nodejs"
+image: node:12.7.0
 
 before_script:
   - apt-get install nodejs
