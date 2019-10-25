@@ -20,5 +20,5 @@ beforeEach(async () => {
 test('DB test', async () => {
     await saveMe();
     const me = await User.findOne({});
-    expect(me.name).toBe("nahan");
+    expect(me.name).toBe("Mahan");
 });
