@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Mahanmmi/Gitlab-CI-Test.git"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
