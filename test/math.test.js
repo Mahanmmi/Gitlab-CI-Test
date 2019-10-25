@@ -9,8 +9,8 @@ test('Sum test', () => {
     expect(sum(1, 2)).toBe(3);
 });
 
-test('DB test', () => {
-    saveMe();
-    const me = await User.findOne();
+test('DB test', async () => {
+    await saveMe();
+    const me = await User.findOne({});
     expect(me.name).toBe("Mahan");
 });

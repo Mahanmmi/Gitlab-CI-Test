@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "env-cmd -f ./config/dev.env node ./src/index.js",
-    "test": "env-cmd -f ./config/test.env jest -i --watch",
+    "test": "env-cmd -f ./config/dev.env jest -i",
     "ci_test": "jest -i"
   },
   "repository": {

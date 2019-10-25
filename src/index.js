@@ -14,7 +14,7 @@ const User = new mongoose.model('user', {
 });
 
 async function saveMe() {
-    const me = new User('Mahan');
+    const me = new User({ name: 'Mahan' });
     await me.save();
 }
 
