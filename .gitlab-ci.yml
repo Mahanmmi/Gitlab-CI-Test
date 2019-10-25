@@ -5,5 +5,5 @@ before_script:
 
 test:
   script:
-    - npm run test
+    - npm run ci_test
 
