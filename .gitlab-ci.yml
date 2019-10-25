@@ -1,9 +1,6 @@
 image: node:12.7.0
 
 before_script:
-  - apt-get install nodejs
-  - apt-get install npm
-  - apt-get update
   - npm install
 
 test:
